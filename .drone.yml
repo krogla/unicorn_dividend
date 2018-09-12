@@ -3,7 +3,7 @@ pipeline:
     image: node:8
     commands:  
     - ls
-    - npm build
+    - npm run build
     - ls
   s3:
     image: plugins/s3
