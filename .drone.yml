@@ -11,8 +11,8 @@ pipeline:
     bucket: dividends.unicorngo.io
     acl: public-read
     region: eu-west-1
-    source: /build/**/*
-    strip_prefix: build/
+    source: dist/**/*
+    strip_prefix: dist/
     when:
       branch: master
   slack:
