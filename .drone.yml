@@ -3,6 +3,7 @@ pipeline:
     image: node:9
     commands:  
     - ls
+    - npm install
     - npm run build
     - ls
   s3:
