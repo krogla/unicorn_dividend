@@ -19,7 +19,7 @@
       <b-card border-variant="success" text-variant="white" sub-title="TOKENS" class="mb-2">
         <h6 v-if="contractState"><b-badge>{{tkn_contract.address}}</b-badge></h6>
         <!--<p class="card-text">You owned <strong>{{getBalance}}</strong> of <strong>{{getTotalSupply}}</strong> dividend tokens</p>-->
-        <h5>You owned <strong>{{getBalance}}</strong> of <strong>{{getTotalSupply}}</strong> dividend tokens</h5>
+        <h5>You owned <strong>{{getBalance}}</strong> of <strong>{{getTotalSupply}}</strong> UnicornGO Dividend Tokens (UDT)</h5>
       </b-card>
       <b-card border-variant="primary" text-variant="white" sub-title="WITHDRAWAL" class="mb-2">
         <h6 v-if="contractState"><b-badge>{{mgr_contract.address}}</b-badge></h6>
