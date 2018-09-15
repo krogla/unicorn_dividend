@@ -1,10 +1,10 @@
 <template>
   <b-container>
-    <h5 class="mb-3">
+    <h5 class="mb-3" v-if="signerState">
       <small>YOUR WALLET:</small>&nbsp;
-      <b-badge pill variant="success" v-if="signerState">{{ signer.address }}</b-badge>
-      <b-badge pill variant="warning" v-else>You must log in to your MetaMask (or similar) wallet to see your data</b-badge>
+      <b-badge pill variant="success">{{ signer.address }}</b-badge>
     </h5>
+    <b-alert variant="warning" show fade v-else><strong>You must log in to your MetaMask (or similar) wallet to see your data</strong></b-alert>
 
     <b-alert variant="info" show fade v-if="isLoading"><strong>Please wait, reading blockchain data...</strong></b-alert>
 
