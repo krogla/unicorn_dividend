@@ -12,7 +12,6 @@ pipeline:
     acl: public-read
     region: eu-west-1
     source: dist/**/*
-    target: unicorn_dividend/
     strip_prefix: dist/
     when:
       branch: master
